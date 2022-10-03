@@ -1,0 +1,70 @@
+body {
+  background: #fcfdcd;
+  padding: 20px;
+}
+
+form {
+  width: 33%;
+  margin: auto;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form label {
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+  border: 1px solid #111;
+  padding: 8px 15px;
+  color: #222;
+  border-radius: 8px;
+  width: 100%;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=submit] {
+  background: #111;
+  color: #fff;
+  width: 120px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.has-error input {
+  border-color: red !important;
+}
+
+.help-block {
+  font-size: 14px;
+  color: red;
+}
+
+.alert-success {
+  background: darkgreen;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.recaptcha-group {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+}

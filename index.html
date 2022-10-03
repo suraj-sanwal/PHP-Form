@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="index.php" method="POST" name="form" id="form">
+        <h1>Form</h1>
+        <div class="form-group name-group">
+            <label for="name">Name</label>
+            <input maxlength="50" name="name" id="name" type="text" placeholder="Name" />
+        </div>
+
+        <div class="form-group email-group">
+            <label for="email">Email</label>
+            <input maxlength="80" name="email" id="email" type="email" placeholder="Email" />
+        </div>
+
+        <div class="form-group phone-group">
+            <label for="phone">Phone</label>
+            <input maxlength="10" name="telephone" id="phone" type="tel" placeholder="Phone Number" />
+        </div>
+
+        <div class="form-group postcode-group">
+            <label for="postcode">Postcode</label>
+            <input maxlength="4" name="postcode" id="postcode" type="text" placeholder="Postcode" />
+        </div>
+
+        <div class="form-group msg-group">
+            <label for="msg">Message</label>
+            <textarea cols="25" maxlength="500" id="msg" name="comments" rows="8"
+                placeholder="Tell us more..."></textarea>
+        </div>
+
+        <!-- Recaptcha -->
+        <div class="recaptcha-group form-group">
+            <div class="g-recaptcha" data-sitekey="6Lcc3E0iAAAAADC1Auhco18zblmkzfhtyonHcwLx"></div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" />
+        </div>
+
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
